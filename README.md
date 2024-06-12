@@ -1,5 +1,5 @@
 # Generator usage inventory
-
+### поточна версія 0.1
 ## Це простий сайт для обліку запуску генераторів
 
 Доступні такі діі:
@@ -57,32 +57,13 @@ Nginx - https://codeigniter.com/user_guide/installation/running.html#hosting-wit
 
 ## Налаштування
 
+### Базові налаштування
+
 Файл `app/Config/App.php`
 
 Змінити строку `'$baseURL'` на ваш домен
 
-Файл `app/Config/Mail.php` потрібно редагувати якщо ви будете використовувати відправку звіту щодня на пошту.
-Дані налаштування прописані для авторизаціі по SMTP протоколу з окремим обліковим записом.
-
-Змінити пошту `$fromEmail  = 'system-generator@DOMAIN.com'`
-Вказати SMTP користувача `$SMTPUser = 'system-generator@DOMAIN.com'`
-Вказати пароль до користувача `$SMTPPass = 'PASSWORD'`
-Вказати порт, якщо він відрізняється `$SMTPPort = 465`
-
-Файл `app/Controllers/MyCli.php` потрібно редагувати поштові скриньки отрумувачів
-
-Від кого `$email->setFrom('system-generator@DOMAIN', 'Генератор');`
-
-Кому `$email->setTo('recepient1@DOMAIN');`
-
-Копія `$email->setCC('recepient2@DOMAIN');`
-
-Від кого `$email->setReplyTo('system-generator@DOMAIN', 'Admin');`
-
-Для активації відправки пропишіть завдання в cron 
-
-`30 7 * * * root /usr/bin/php /var/www/*розміщення*/public/index.php MyCli reportRunsDayMail`
-
+### Налаштування бази даних
 
 Файл `app/Config/Database.php` потрібно прописати ваші налаштування бази даних
 
@@ -93,6 +74,8 @@ Nginx - https://codeigniter.com/user_guide/installation/running.html#hosting-wit
 `'password'     => 'generators-git',`
 
 `'database'     => 'generators-git',`
+
+### Налаштування груп користувачів
 
 Файл `app/Config/AuthGroups.php` визначає список груп користувачів які мають різні права:
 
@@ -122,3 +105,39 @@ Nginx - https://codeigniter.com/user_guide/installation/running.html#hosting-wit
 
 Повний список команд https://shield.codeigniter.com/user_management/managing_users/
 
+### Налаштування пошти (не обов'язково)
+
+Файл `app/Config/Mail.php` потрібно редагувати якщо ви будете використовувати відправку звіту щодня на пошту.
+
+Дані налаштування прописані для авторизаціі по SMTP протоколу з окремим обліковим записом.
+
+Змінити пошту `$fromEmail  = 'system-generator@DOMAIN.com'`
+
+Вказати SMTP користувача `$SMTPUser = 'system-generator@DOMAIN.com'`
+
+Вказати пароль до користувача `$SMTPPass = 'PASSWORD'`
+
+Вказати порт, якщо він відрізняється `$SMTPPort = 465`
+
+### Налаштування пошти планувальник(не обов'язково)
+
+Файл `app/Controllers/MyCli.php` потрібно редагувати поштові скриньки отрумувачів
+
+Від кого `$email->setFrom('system-generator@DOMAIN', 'Генератор');`
+
+Кому `$email->setTo('recepient1@DOMAIN');`
+
+Копія `$email->setCC('recepient2@DOMAIN');`
+
+Від кого `$email->setReplyTo('system-generator@DOMAIN', 'Admin');`
+
+Для активації відправки пропишіть завдання в cron 
+
+`30 7 * * * root /usr/bin/php /var/www/*розміщення*/public/index.php MyCli reportRunsDayMail`
+
+## todo
+
+- додати причину чому генератор не зупинився
+- додати скільки літрів в генераторі на основі останніх заправок і використання
+- додати параметр споживання літрів на годину на основі темплейту генератору з можливістю редагування
+- таблиця генератора може бути послідовною в подіях, тобто об'єднання запусків/заправки/сервісу
