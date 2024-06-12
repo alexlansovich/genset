@@ -131,7 +131,7 @@ Nginx - https://codeigniter.com/user_guide/installation/running.html#hosting-wit
 
 Від кого `$email->setReplyTo('system-generator@DOMAIN', 'Admin');`
 
-Для активації відправки пропишіть завдання в cron 
+Для активації відправки пропишіть завдання в cron в вашій операційній системі
 
 `30 7 * * * root /usr/bin/php /var/www/*розміщення*/public/index.php MyCli reportRunsDayMail`
 
