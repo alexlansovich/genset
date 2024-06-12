@@ -61,7 +61,7 @@ Nginx - https://codeigniter.com/user_guide/installation/running.html#hosting-wit
 
 Файл `app/Config/App.php`
 
-Змінити строку `'$baseURL'` на ваш домен
+Змінити строку `$baseURL = 'https://DOMAIN.net/'` на ваш домен
 
 ### Налаштування бази даних
 
