@@ -135,6 +135,7 @@ Nginx - https://codeigniter.com/user_guide/installation/running.html#hosting-wit
 
 `30 7 * * * root /usr/bin/php /var/www/*розміщення*/public/index.php MyCli reportRunsDayMail`
 
+
 ## todo
 
 - додати причину чому генератор не зупинився
