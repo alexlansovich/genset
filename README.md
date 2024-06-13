@@ -1,4 +1,4 @@
-# Generator usage inventory
+# Genset usage inventory
 ### Поточна версія 0.1
 ## Це простий сайт для обліку запуску генераторів
 
