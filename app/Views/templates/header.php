@@ -3,13 +3,13 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Генератори McLaut</title>
+    <title>Генератори</title>
     <meta name="description" content="<?php echo base_url(); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/png" href="/favicon.ico">
-    <script src="<?php echo base_url('assets/fomantic/dist/jquery-3.7.1.min.js'); ?>"></script>
-    <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/fomantic/dist/semantic.min.css'); ?>">
-    <script src="<?php echo base_url('assets/fomantic/dist/semantic.min.js'); ?>"></script>
+    <script src="<?php echo base_url('assets/fomantic/jquery-3.7.1.min.js'); ?>"></script>
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/fomantic/semantic.min.css'); ?>">
+    <script src="<?php echo base_url('assets/fomantic/semantic.min.js'); ?>"></script>
     <script src="<?php echo base_url('assets/functions.js'); ?>"></script>
 </head>
 
