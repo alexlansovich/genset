@@ -30,7 +30,7 @@
 > УВАГА - проєкт налаштований в режимі development (не production)
 
 > [!CAUTION]
-> Ця версія для тих у кого немає доступу до `composer` для встановлення модулів. Якщо доступу є - використовуйте основну гілку https://github.com/alexlansovich/generator
+> Ця версія для тих у кого немає доступу до `composer` для встановлення модулів. Якщо доступу є - використовуйте основну гілку https://github.com/alexlansovich/genset
 
 - створіть окремий домен для сайту
 - налаштуйте nginx aбо apache для роботи з фреймворком Codeigniter https://codeigniter.com/user_guide/intro/requirements.html
