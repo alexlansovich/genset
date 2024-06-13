@@ -26,11 +26,11 @@
 
 ## Встановлення
 
-> [!Увага]
+> [!CAUTION]
 > УВАГА - проєкт налаштований в режимі development (не production)
 
->  Ця версія для тих хто не має доступ до `composer` для встановлення модулів. Якщо доступ є, то краще використовуйте гілку https://github.com/alexlansovich/generator/tree/master
-
+> [!CAUTION]
+> Для цієі версіі має бути доступ до `composer` для встановлення модулів. Якщо доступу не має - використовуйте гілку https://github.com/alexlansovich/generator/tree/master-full
 
 - створіть окремий домен для сайту
 - налаштуйте nginx aбо apache для роботи з фреймворком Codeigniter https://codeigniter.com/user_guide/intro/requirements.html
